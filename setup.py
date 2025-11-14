@@ -7,7 +7,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author='007tofreedom',
-    author_email='your-email@example.com',  # update to your email!
+    author_email='micahramos59@gmail.com',  # update to your email!
     url='https://github.com/007tofreedom/Track-Asteroids-in-Real-Time-with-NASA-API',
     packages=find_packages(),
     install_requires=[
