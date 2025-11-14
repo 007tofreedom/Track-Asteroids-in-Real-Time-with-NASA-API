@@ -1,30 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='sentinel-satellite',
-    version='0.1.0',
-    description='Terminal-based spy satellite simulation with ASCII art and real-time controls, integrated with NASA API for live asteroid events.',
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown",
-    author='007tofreedom',
-    author_email='micahramos59@gmail.com',  # update to your email!
-    url='https://github.com/007tofreedom/Track-Asteroids-in-Real-Time-with-NASA-API',
-    packages=find_packages(),
+    name='sentinel_satellite',  # The name of your package
+    version='1.0.0',  # Version of your package
+    packages=find_packages(),  # Automatically find packages in your repo
+    py_modules=['satellite_animationv11'],  # Include your Python script
     install_requires=[
         'requests',
         'pygame',
         'colorama'
-    ],
+    ],  # Dependencies
     entry_points={
         'console_scripts': [
-            'sentinel-satellite=main:main',  # update 'main:main' if your entry point is different!
+            'sentinel_satellite=satellite_animationv11:main',  # Command to run
         ],
     },
-    python_requires='>=3.6',
-    license='MIT',
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
 )
